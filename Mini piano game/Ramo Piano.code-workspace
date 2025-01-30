@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "Mini piano game",
+			"path": "."
+		},
+		{
+			"name": "piano-mp3",
+			"path": "../../Downloads/piano-mp3-master/piano-mp3"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Mini piano game"
+	}
+}

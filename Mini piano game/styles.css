@@ -1,0 +1,174 @@
+/* Header Styles */
+.piano-header {
+  color: #7B09CA;
+  text-align: center;
+  padding: 40px 0; /* Vertical padding for spacing */
+}
+
+.piano-header h1 {
+  font-size: 40px;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+/* General Piano Styles */
+.piano {
+    position: relative;
+    width: 1260px; /* Adjust according to the number of keys */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .white-keys {
+    display: flex;
+  }
+  
+  .key {
+    border: 1px solid #000;
+    box-shadow: 0 4px #aaa;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .key.white {
+    background-color: white;
+    width: 60px;
+    height: 240px;
+    z-index: 1;
+    margin-right: -1px;
+    position: relative;
+    font-weight: bold;
+    font-size: 0px;
+    
+
+  }
+
+  /* Positioning the Note Name at the Bottom */
+.key.white::after {
+    content: attr(data-note);
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    font-size: 18px;
+  }
+
+  .key.white:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 4px #888;
+    transform: translateY(-5px);
+  }
+  
+
+
+  /* Black Key Styles */
+  .key.black {
+    background-color: black;
+    width: 40px;
+    height: 160px;
+    position: absolute;
+    z-index: 2;
+    margin-left: -20px;
+    box-shadow: 0 2px #333;
+  }
+  
+  .key.black::after {
+    content: attr(data-note); 
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 14px; 
+    font-weight: bold;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+  }
+  
+  .key.black:hover {
+    background-color: #333;
+    box-shadow: 0 4px #555;
+    transform: translateY(-4px);
+  }
+  
+  /* Specific Positions for Black Keys */
+  .key.black[data-note="C#"] {
+    left: 70px;
+  }
+  
+  .key.black[data-note="D#"] {
+    left: 130px;
+  }
+  
+  .key.black[data-note="F#"] {
+    left: 245px;
+  }
+  
+  .key.black[data-note="G#"] {
+    left: 305px;
+  }
+  
+  .key.black[data-note="A#"] {
+    left: 365px;
+  }
+
+  .key.black[data-note="C#2"] {
+    left: 480px;
+  }
+
+  .key.black[data-note="D#2"] {
+    left: 540px;
+  }
+
+  .key.black[data-note="F#2"] {
+    left: 660px;
+  }
+  
+  .key.black[data-note="G#2"] {
+    left: 720px;
+  }
+
+  .key.black[data-note="A#2"] {
+    left: 780px;
+  }
+
+  .key.black[data-note="C#3"] {
+    left: 895px;
+  }
+
+  .key.black[data-note="D#3"] {
+    left: 955px;
+  }
+
+
+  .key.black[data-note="F#3"] {
+    left: 1072px;
+  }
+  
+  .key.black[data-note="G#3"] {
+    left: 1130px;
+  }
+
+  .key.black[data-note="A#3"] {
+    left: 1190px;
+  }
+
+
+
+
+
+/* Footer Text */
+.footer-text {
+  margin-top: 300px;
+  font-size: 16px;
+  color: rgba(238, 0, 0, 0.8);
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 1px;
+  align-items: center;
+  margin-left: 600px
+}
+
+  
